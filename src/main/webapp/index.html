@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Basic Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .calculator {
+            width: 300px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .input-container {
+            margin-bottom: 10px;
+        }
+
+        .input-container input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .result {
+            margin-bottom: 10px;
+        }
+
+        .result input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-weight: bold;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn-container button {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn-container button.add {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .btn-container button.subtract {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .btn-container button.multiply {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        .btn-container button.divide {
+            background-color: #ff9800;
+            color: white;
+        }
+
+        .btn-container button.clear {
+            background-color: #607D8B;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Basic Calculator</h1>
+
+    <div class="calculator">
+        <div class="input-container">
+            <label for="firstno">Enter first number:</label><br>
+            <input type="text" id="firstno" placeholder="Enter first number">
+        </div>
+        <div class="input-container">
+            <label for="secondno">Enter second number:</label><br>
+            <input type="text" id="secondno" placeholder="Enter second number">
+        </div>
+        <div class="result">
+            <label for="result">Result:</label><br>
+            <input type="text" id="result" readonly>
+        </div>
+
+        <div class="btn-container">
+            <button class="add" onclick="add()">Add</button>
+            <button class="subtract" onclick="subtract()">Subtract</button>
+            <button class="multiply" onclick="multiply()">Multiply</button>
+            <button class="divide" onclick="divide()">Divide</button>
+            <button class="clear" onclick="clear1()">Clear</button>
+        </div>
+    </div>
+
+    <script src="addition.js"></script>
+    <script src="subtraction.js"></script>
+    <script src="multiplication.js"></script>
+    <script src="divison.js"></script>
+    <script src="clear.js"></script>
+</body>
+
+</html>
+
